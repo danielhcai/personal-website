@@ -1,13 +1,40 @@
 header, body {
     font-family: "Raleway", sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 header {
+    background-color: #FFFFFF;
     letter-spacing: 2px;
 }
 
+body { 
+    background-color: #F2F2F2;
+}
+
 .navbar-text{
-    font-weight: 700;
+    font-weight: 500;
+}
+
+.navbar-collapse .navbar-nav .nav-link:hover{
+    color: #A3D5FF;
+}
+
+#navbar-name{
+    padding-right: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#navbar-button {
+    border: none;
+}
+
+#navbar-button:hover {
+    background-color: #DFDFDF;
+}
+
+#navbar-button:focus {
+    outline: none;
 }
