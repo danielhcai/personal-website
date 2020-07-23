@@ -1,16 +1,42 @@
-header, body {
+html, header, body {
     font-family: "Raleway", sans-serif;
     font-style: normal;
+    font-size: 20px;
     font-weight: 400;
 }
 
+@media only screen and (max-width: 1200px) {
+    html, header, body {
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    html, header, body {
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    html, header, body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    html, header, body {
+        font-size: 12px;
+    }
+}
 header {
     background-color: #FFFFFF;
     letter-spacing: 2px;
 }
 
 body { 
-    background-color: #F2F2F2;
+    background-color: #F2F2F8;
 }
 
 .navbar-text{
@@ -23,7 +49,6 @@ body {
 
 #navbar-name{
     padding-right: 10px;
-    font-size: 20px;
     font-weight: 600;
 }
 
@@ -37,4 +62,22 @@ body {
 
 #navbar-button:focus {
     outline: none;
+}
+
+#home {
+    background-color: #F2F2F8;
+}
+
+.bg-grey {
+    background-color: #F2F2F8;
+}
+
+.bg-white {
+    background-color: #FF0000;
+}
+
+#intro{
+    text-align: center;
+    padding: 100px;
+    white-space: nowrap;
 }
