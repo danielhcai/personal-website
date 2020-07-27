@@ -42,11 +42,11 @@ p {
     padding-right: 50px;
 }
 
-.navbar-collapse .navbar-nav .nav-link{
+.navbar-collapse > .navbar-nav .nav-link{
     color: #AAAAAA;
 }
 
-.navbar-collapse .navbar-nav .nav-link:hover{
+.navbar-collapse > .navbar-nav .nav-link:hover{
     color: #A3D5FF;
 }
 
@@ -86,6 +86,7 @@ p {
     color: #656565;
     padding-right: 10px;
     letter-spacing: 3px;
+    font-weight: 500;
 }
 
 #navbar-button {
@@ -105,6 +106,38 @@ p {
     padding-top: 100px;
     padding-bottom: 50px;
     white-space: nowrap;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    padding: 0;
+}
+
+#projects > * {
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+#projects > div {
+    width: 50%;
+    padding: 2rem;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-left-width: 1px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+}
+
+#projects > div:nth-child(2n-1) {
+    border-left-width: 0px;
+}
+
+#projects > div:nth-child(-n+2) {
+    border-top-width: 1px;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -146,6 +179,30 @@ p {
 
     header {
         font-size: 12px;
+    }
+
+    #projects > div{
+        width: 100%;
+        border-left-width: 0px;
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-bottom-width: 1px;
+    }
+
+    #projects > div:nth-child(2n-1) {
+        border-left-width: 0px;
+    }
+
+    #projects > div:nth-child(2n) {
+        border-left-width: 0px;
+    }
+
+    #projects > div:nth-child(-n+2) {
+        border-top-width: 1px;
+    }
+
+    #projects > div:nth-child(2) {
+        border-top-width: 0px;
     }
 }
 
