@@ -7,12 +7,19 @@ html {
 
 header {
     font-size: 16px;
-    letter-spacing: 2px;
+    letter-spacing: 0.1rem;
     background-color: #FFFFFF;
+    border-width: 0px;
 }
 
 body { 
     background-color: #F3F3F3;
+    border-width: 0px;
+}
+
+footer {
+    padding-top: 0rem;
+    padding-bottom: 3rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,6 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
     color: #656565;
 }
+
 .bg-grey {
     background-color: #F3F3F3;
 }
@@ -53,8 +61,10 @@ p {
 .section-wrapper {
     width: 92%;
     max-width: 1400px;
-    margin: 50px auto 50px auto;
-    border: 1px solid #CCCCCC;
+    margin: 50px auto 2rem auto;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 1px;
     padding-top: 50px;
     padding-bottom: 15px;
     background-color: #FFFFFF;
@@ -62,24 +72,60 @@ p {
 }
 
 .section-title {
-   padding-bottom: 40px; 
+   padding-bottom: 20px; 
 }
 
 .section-body {
-    padding-bottom: 25px
+    padding-bottom: 40px
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
+.button {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    color: #434343;
+    font-weight: 600;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 1px; 
+    border-radius: 0px;
 }
 
-.project-card {
-    width: 100px;
+.button:hover {
+    color: #A3D5FF;
+    border-color: #A4D5FF;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+
+.img-wrapper {
+    width: 95%;
+    margin: 0px auto 25px auto;
+}
+
+.footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    border-color: #CCCCCC; 
+    border-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
 }
 
 #navbar-header {
-    border-bottom: 1px solid #CCCCCC;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-bottom-width: 1px;
 }
 
 #navbar-name{
@@ -113,7 +159,6 @@ p {
     flex-wrap: wrap;
     align-items: stretch;
     width: 100%;
-    padding: 0;
 }
 
 #projects > * {
@@ -185,20 +230,7 @@ p {
         width: 100%;
         border-left-width: 0px;
         border-top-width: 0px;
-        border-right-width: 0px;
         border-bottom-width: 1px;
-    }
-
-    #projects > div:nth-child(2n-1) {
-        border-left-width: 0px;
-    }
-
-    #projects > div:nth-child(2n) {
-        border-left-width: 0px;
-    }
-
-    #projects > div:nth-child(-n+2) {
-        border-top-width: 1px;
     }
 
     #projects > div:nth-child(2) {
