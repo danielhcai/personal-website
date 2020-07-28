@@ -1,0 +1,272 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+header {
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    background-color: #FFFFFF;
+    border-width: 0px;
+}
+
+body { 
+    background-color: #F3F3F3;
+    border-width: 0px;
+}
+
+footer {
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #434343;
+}
+
+p {
+    color: #656565;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.bg-grey {
+    background-color: #F3F3F3;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+.navbar-nav .navbar-text{
+    color: #CCCCCC;
+    font-weight: 500;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.section-div h1, h2, h3, h4, h5, h6, p {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.navbar-collapse > .navbar-nav .nav-link{
+    color: #AAAAAA;
+}
+
+.navbar-collapse > .navbar-nav .nav-link:hover{
+    color: #A3D5FF;
+}
+
+.section-wrapper {
+    width: 92%;
+    max-width: 1400px;
+    margin: 2rem auto 2rem auto;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 1px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.section-title {
+   padding-bottom: 2rem; 
+}
+
+.section-body {
+    padding-bottom: 4rem;
+}
+
+.button {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    color: #434343;
+    font-weight: 600;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 1px; 
+    border-radius: 0px;
+}
+
+.button:hover {
+    color: #A3D5FF;
+    border-color: #A4D5FF;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+
+.img-wrapper {
+    width: 95%;
+    margin: 0px auto 25px auto;
+}
+
+.icons{
+    list-style: none;
+    display: inline-flex;
+}
+
+.icons .icon {
+    color: #656565;
+    font-size: 1.5rem; 
+    text-decoration: none;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+.icons .icon:hover {
+    color: #A3D5FF;
+}
+
+#navbar-header {
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-bottom-width: 1px;
+}
+
+#navbar-name{
+    color: #656565;
+    padding-right: 10px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+#navbar-button {
+    border: none;
+}
+
+#navbar-button:hover {
+    background-color: #DFDFDF;
+}
+
+#navbar-button:focus {
+    outline: none;
+}
+
+#intro{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    white-space: nowrap;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+#projects > * {
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+#projects > div {
+    width: 50%;
+    padding: 2rem;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-left-width: 1px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 1px;
+}
+
+#projects > div:nth-child(2n-1) {
+    border-left-width: 0px;
+}
+
+#projects > div:nth-child(-n+2) {
+    border-top-width: 1px;
+}
+
+#footer {
+    padding-top: 1.5rem;
+    padding-bottom: .5rem;
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    text-align: center;
+    border-color: #CCCCCC; 
+    border-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+@media only screen and (max-width: 1600px) {
+    html {
+        font-size: 18px;
+    }
+
+    header {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+
+    header { 
+        font-size: 13px;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    html{
+        font-size: 14px;
+    }
+
+    header {
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 13px;
+    }
+
+    header {
+        font-size: 12px;
+    }
+
+    #projects > div{
+        width: 100%;
+        border-left-width: 0px;
+        border-top-width: 0px;
+        border-bottom-width: 1px;
+    }
+
+    #projects > div:nth-child(2) {
+        border-top-width: 0px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    html { 
+        font-size: 12px;
+    }
+
+    header {
+        font-size: 10px;
+    }
+}
+
