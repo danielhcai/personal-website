@@ -115,6 +115,7 @@ ul {
 .icons{
     list-style: none;
     display: inline-flex;
+    padding-right: 1rem;
 }
 
 .icons .icon {
